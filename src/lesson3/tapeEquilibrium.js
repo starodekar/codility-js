@@ -1,10 +1,10 @@
 function solution(A) {
     let leftSum = A[0];
-    console.log(leftSum);
+    //console.log(leftSum);
     let rightSum = A.reduce((a,b) => a+b) - A[0];
-    console.log(rightSum);
+    //console.log(rightSum);
     let diff = Math.abs(leftSum - rightSum);
-    console.log(diff);
+    //console.log(diff);
     for(i=1;i<A.length-1;i++){
         leftSum += A[i];
         rightSum -= A[i];
